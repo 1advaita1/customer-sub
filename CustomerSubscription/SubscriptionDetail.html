@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <script src="JS/NgCtrl.js"></script>
+    <style>
+        table {
+            !border: 1px solid red;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding-top: 10px;
+            padding-right: 30px;
+            padding-bottom: 50px;
+            padding-left: 50px;
+            width: 10px;
+        }
+        body {
+
+        }
+    </style>
+        
+
+</head>
+
+
+<body ng-app="NgCS" ng-controller="NgCtrl">
+    <!--<div >
+        <div ng-include="'Suraj.html'"></div>
+    </div>-->
+
+    <div style="background-color: orange; height: 120px; margin-left: 0px; margin-right: 0px; margin-bottom: 20px; padding-top: 40px; padding-bottom: 60px; padding-left: 80px; width: 100%; color: white; vertical-align:middle; font-size: 40px"> Peach Comp Pvt Ltd </div>
+    <div class="container-fluid">
+        <div class="row">
+
+
+
+
+            <h1 style="margin: 80px">Welcome, {{name}}</h1>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <table class="table table-hover" style="margin-left: 80px; width: 700px">
+                        <caption style="caption-side: top; font-size: 25px; color: black">Your Users </caption>
+
+                        <tbody>
+                            <tr>
+                                <td>Currently using:</td>
+                                <td style="text-align: right">30</td>
+                            </tr>
+                            <tr>
+                                <td>Registered:</td>
+                                <td style="text-align: right">40</td>
+                            </tr>
+                            <tr>
+                                <td>Total available:</td>
+                                <td style="text-align: right">50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <table class="table table-hover" style="margin-left: 80px; width: 700px">
+                        <caption style="caption-side: top;font-size: 25px; color: black">Ongoing plan</caption>
+
+                        <tbody>
+                            <tr>
+                                <td>Type:</td>
+                                <td style="text-align: right">{{type}}</td>
+                            </tr>
+                            <tr>
+                                <td>Subscription period:</td>
+                                <td style="text-align: right"> From {{subFrom | date: "dd-MM-yy"}}  to  {{subTo | date: "dd-MM-yy"}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+    <div style="font-style:italic; margin-left:80px;margin-right:80px; margin-top:60px;font-size:25px"> Testimonials: This product is the best tool for managing my company's resources. Ever since we have been using it, our profits have doubled. We buy the ten-years' subscription. ~Amazon CEO</div>
+
+    <div style="background-color:gray; height:80%; margin-top:80px"><img src="images/pricing.png" alt="Pricing chart" style="margin-left:250px; margin-top:0px"></div>
+    <div style="background-color: orange; height: 120px; margin-left: 0px; margin-right: 0px; margin-top: 26px; padding-top: 40px; padding-bottom: 60px; padding-left: 80px; width: 100%; color: white; vertical-align:middle; font-size: 40px"> Peach Comp Pvt Ltd </div>
+
+
+
+
+</body>
+</html>
